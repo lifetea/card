@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -10,16 +11,35 @@
 <meta name="x5-page-mode" content="app">
 <meta name="description" content="拜大年">
 <meta name="author" content="Lee">
-<title>card</title>
+<title>艺人驾到祝大家新春快乐，三羊开泰！</title>
 <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
 <link type="text/css" rel="stylesheet" href="css/card.css?v=3.0" />
-<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-<script type="text/javascript" src="js/hammer.min.js"></script>
-<script type="text/javascript" src="js/card.js?v=3.1"></script>
+
 </head>
 <body>
+<?php 
+	/*
+	if(!isset($_COOKIE["id"])){
+		setcookie("id", ''.time(), time()+36000);
+	}
+	$str = "http://localhost/card/card.php?id=".$_COOKIE["id"];
+	//echo  $str;
+    //echo time();
+	if(isset($_GET['id']) && !isset($_SESSION['preId'])){
+		  $_SESSION['preId']=$_GET['id'];
+		echo  $_SESSION['preId'];
+	}else{
+		 
+	}
+	if(($_SESSION['load'])!=1){
+		$_SESSION['load']=1;
+		header($str); 
+		exit;
+	}
+*/
+?>
 	<div class="container">
-		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
+	
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
 		<!-- 轮播 -->
@@ -51,7 +71,11 @@
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
 			<a href="javascript:;" class="share" onclick="upload();">分享</a>
 		</div>
+			<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 	</div>
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript" src="js/hammer.min.js"></script>
+	<script type="text/javascript" src="js/card.js?v=3.1"></script>
 	<script type="text/javascript">
 	window.onload = function() {
 		var mySwiper = new Swiper('.swiper-container',{
