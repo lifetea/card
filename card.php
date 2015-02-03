@@ -14,7 +14,9 @@
 <title>艺人驾到祝大家新春快乐，三羊开泰！</title>
 <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
 <link type="text/css" rel="stylesheet" href="css/card.css?v=3.0" />
-
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript" src="js/hammer.min.js"></script>
+	<script type="text/javascript" src="js/card.js?v=3.1"></script>
 </head>
 <body>
 <?php 
@@ -39,7 +41,7 @@
 */
 ?>
 	<div class="container">
-	
+		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
 		<!-- 轮播 -->
@@ -71,11 +73,9 @@
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
 			<a href="javascript:;" class="share" onclick="upload();">分享</a>
 		</div>
-			<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
+			
 	</div>
-	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-	<script type="text/javascript" src="js/hammer.min.js"></script>
-	<script type="text/javascript" src="js/card.js?v=3.1"></script>
+
 	<script type="text/javascript">
 	window.onload = function() {
 		var mySwiper = new Swiper('.swiper-container',{
