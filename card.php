@@ -39,7 +39,7 @@
 */
 ?>
 	<div class="container">
-	
+		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
 		<!-- 轮播 -->
@@ -71,7 +71,7 @@
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
 			<a href="javascript:;" class="share" onclick="upload();">分享</a>
 		</div>
-			<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
+			
 	</div>
 	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 	<script type="text/javascript" src="js/hammer.min.js"></script>
