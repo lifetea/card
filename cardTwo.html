@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta name="description" content="拜大年">
+<meta name="author" content="Lee">
+<title>card</title>
+<link type="text/css" rel="stylesheet" href="css/card.css?v=3.2" />
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/card.js?v=3.1"></script>
+</head>
+<body>
+	<div class="container" id="scene4">
+		<!-- <audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio> -->
+		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
+		<div id="photo"><img src="" id="image" /></div>
+		<div class="background"></div>
+		<div class="scene"></div>
+		<div id="hitarea"></div>
+		
+		<div class="toolbar toolbg">
+			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
+			<a href="javascript:;" class="share" onclick="upload();">分享</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	window.onload = function() {
+		init();
+		
+		//动画
+		
+	}
+	</script>
+</body>
+</html>
