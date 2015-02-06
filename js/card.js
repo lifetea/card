@@ -1,4 +1,5 @@
-﻿var file = null;
+﻿var scenes = [];
+var file = null;
 
 var canvas = null;
 var ctx = null;
@@ -34,31 +35,7 @@ function init(){
 	mc.add([pinch]);
 	
 	image = document.getElementById('image');
-}
-
-function bgAnimate(cvs, index, width, height){
-    var context = cvs.getContext("2d");
-	cvs.width = width;
-	cvs.height = height;
-	var bg = new Image();
-	bg.onload = function(){
-		var tempHeight = width/bg.width * bg.height;
-		context.drawImage(bg, 0, 0, bg.width, bg.height, 0, 0, width, tempHeight);
-		var imageData = context.getImageData(0, 0, width, height);
-		var delta = -60;
-		// setInterval(function(){
-		// 	var data = imageData.data;
-		// 	for(var i = 0, len = data.length; i < len; i += 3){
-		// 		data[i] = data[i] == 0?data[i]:(data[i]+delta);
-		// 		data[i+1] = data[i+1] == 0?data[i+1]:(data[i+1]+delta);
-		// 		data[i+2] = data[i+2] == 0?data[i+2]:(data[i+2]+delta);
-		// 	}
-		// 	delta = -delta;
-		// 	context.clearRect(0, 0, width, height);
-		// 	context.putImageData(imageData, 0, 0);
-		// }, 200);
-	};
-	bg.src = '../images/bg3_2_'+index+'.gif';
+	scenes = document.getElementsByClassName('scene');
 }
 
 function selectPhoto(){
@@ -67,6 +44,9 @@ function selectPhoto(){
 	var fReader = new FileReader();
 	fReader.onloadend = function(e){
 		image.src = e.target.result;
+		for(var i = 0, len = scenes.length; i < len; i++){
+			scenes[i].className = 'scene opacity';
+		}
 	}
 	file = photofile.files[0];
 	fReader.readAsDataURL(file);
@@ -78,34 +58,45 @@ function initPhoto(){
 	image.style.top = '0px';
 	image.style.left = '0px';
 	zoom = 1;
-	/*移动*/
-	var top = 0;
-	var left = 0;	
-	mc.on("panmove", function(ev) {
-		image.style.top = top + ev.deltaY + 'px';
-		image.style.left = left + ev.deltaX + 'px';
-	});
-	mc.on("panend", function(ev) {
-		top = top + ev.deltaY;
-		left = left + ev.deltaX;
-		
-		pTop = top;
-		pLeft = left;
-	});
-	/*缩放*/
+	
 	image.onload = function(){
+		mc.on("tap", function(ev) {
+			for(var i = 0, len = scenes.length; i < len; i++){
+				scenes[i].className = 'scene opacity';
+			}
+		});
+		/*移动*/
+		var top = 0;
+		var left = 0;	
+		mc.on("panmove", function(ev) {
+			image.style.top = top + ev.deltaY + 'px';
+			image.style.left = left + ev.deltaX + 'px';
+		});
+		mc.on("panend", function(ev) {
+			top = top + ev.deltaY;
+			left = left + ev.deltaX;
+			
+			pTop = top;
+			pLeft = left;
+		});
+		/*缩放*/
 		mc.on("pinchin", function(ev) {
 			if(image.offsetWidth > cWidth){
 				image.style.width = image.offsetWidth * 0.98 +'px';
 				zoom = zoom * 0.98;
 			}
 		});
-		
 		mc.on("pinchout", function(ev) {
 			image.style.width = image.offsetWidth * 1.02 +'px';
 			zoom = zoom * 1.02;
 		});
 	};
+}
+
+function preview(){
+	for(var i = 0, len = scenes.length; i < len; i++){
+		scenes[i].className = 'scene';
+	}
 }
 
 function upload(){

@@ -11,27 +11,40 @@
 <meta name="description" content="拜大年">
 <meta name="author" content="Lee">
 <title>card</title>
+<link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
 <link type="text/css" rel="stylesheet" href="css/card.css?v=3.2" />
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 <script type="text/javascript" src="js/hammer.min.js"></script>
-<script type="text/javascript" src="js/card.js?v=3.1"></script>
+<script type="text/javascript" src="js/card.js?v=3.2"></script>
 </head>
 <body>
-	<div class="container" id="scene4">
-		<!-- <audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio> -->
+	<div class="container">
+		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
-		<div class="scene"></div>
-		<div class="animation">
-			<div class="money money1"></div>
-			<div class="money money2"></div>
-			<div class="money money3"></div>
-			<div class="money money4"></div>
-			<div class="money money5"></div>
-			<div class="money money6"></div>
+		<!-- 轮播 -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- 财神 -->
+				<div class="swiper-slide" id="scene1"> 
+					<div class="scene"></div>
+				</div>
+				<!-- 如花 -->
+				<div class="swiper-slide" id="scene2"> 
+					<div class="scene"></div>
+				</div>
+				<!-- 武媚娘 -->
+				<div class="swiper-slide" id="scene3"> 
+					<div class="scene"></div>
+				</div>
+			</div>
 		</div>
-		<div id="hitarea"></div>
 		
-		<div class="toolbar toolbg">
+		<div class="cloud"><a href="#" class="download">下载APP</a></div>
+		<div id="hitarea"></div>
+		<div class="pagination"></div>
+		
+		<div class="toolbar">
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
 			<a href="javascript:;" class="preview" onclick="preview();">预览</a>
 			<a href="javascript:;" class="share" onclick="upload();">分享</a>
@@ -39,10 +52,13 @@
 	</div>
 	<script type="text/javascript">
 	window.onload = function() {
+		var mySwiper = new Swiper('.swiper-container',{
+			mode:'horizontal',
+			pagination: '.pagination',
+			loop: true
+		});  
+	  
 		init();
-		
-		//动画
-		
 	}
 	</script>
 </body>
