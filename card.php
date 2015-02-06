@@ -40,7 +40,7 @@
 	}
 */
 ?>
-	<div class="container">
+	<div style="display:none" class="container">
 		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
