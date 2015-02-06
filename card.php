@@ -14,9 +14,7 @@
 <title>艺人驾到祝大家新春快乐，三羊开泰！</title>
 <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
 <link type="text/css" rel="stylesheet" href="css/card.css?v=3.0" />
-	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-	<script type="text/javascript" src="js/hammer.min.js"></script>
-	<script type="text/javascript" src="js/card.js?v=3.1"></script>
+
 </head>
 <body>
 <?php 
