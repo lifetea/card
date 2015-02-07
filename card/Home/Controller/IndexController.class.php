@@ -27,7 +27,7 @@ class IndexController extends Controller {
     	$jssdk = new \Org\Util\JSSDK();
     	echo $jssdk->getAccessToken();
     	echo "<br/>";
-    	echo $jssdk->getJsApiTicket();
+    	//echo $jssdk->getJsApiTicket();
     	echo "<br/>";
     	echo $jssdk->hello();
 		//$this->display();

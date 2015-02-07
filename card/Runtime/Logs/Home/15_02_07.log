@@ -391,3 +391,208 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001061s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
 
+[ 2015-02-07T21:25:39+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 11 bytes D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2015-02-07T21:25:42+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2015-02-07T21:25:43+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-02-07T21:25:44+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2015-02-07T21:25:44+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2015-02-07T21:25:45+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2015-02-07T21:25:46+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2015-02-07T21:25:46+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2015-02-07T21:25:47+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2015-02-07T21:25:47+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001679s ]
+
+[ 2015-02-07T21:25:48+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2015-02-07T21:25:48+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card\Home\Controller\IndexController.class.php on line 27 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [8] Undefined variable: appId D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 8 行.
+NOTIC: [8] Undefined variable: appSecret D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 9 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001634s ]
+
