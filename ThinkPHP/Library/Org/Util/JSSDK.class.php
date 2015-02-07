@@ -62,7 +62,6 @@ class JSSDK {
   	}
   	return $ticket;  	
   }
-
   
   public function getAccessToken() {
     $token = S('access_token');
