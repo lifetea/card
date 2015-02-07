@@ -225,3 +225,169 @@ INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
 
+[ 2015-02-07T20:18:46+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000535s ]
+
+[ 2015-02-07T20:25:06+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+NOTIC: [2] require_once(../Common/test.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:25:27+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2015-02-07T20:26:53+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:27:35+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:27:36+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:27:36+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:27:36+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:30:34+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:30:35+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:30:35+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+
+[ 2015-02-07T20:41:47+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2015-02-07T20:42:27+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [8] Undefined variable: token D:\git\card\ThinkPHP\Library\Org\Util\Test.class.php 第 5 行.
+NOTIC: [2] unlink(./card/Runtime/Temp/49934712976a934463e95f1e35fca2d1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2015-02-07T20:42:28+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [8] Undefined variable: token D:\git\card\ThinkPHP\Library\Org\Util\Test.class.php 第 5 行.
+NOTIC: [2] unlink(./card/Runtime/Temp/49934712976a934463e95f1e35fca2d1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
