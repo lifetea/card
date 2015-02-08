@@ -11,6 +11,7 @@
 <meta name="description" content="拜大年">
 <meta name="author" content="Lee">
 <title>card</title>
+<link type="text/css" rel="stylesheet" href="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" />
 <link type="text/css" rel="stylesheet" href="css/card.css?v=90.17" />
 <script type="text/javascript" src="js/hammer.min.js"></script>
 <script type="text/javascript" src="js/card.js?v=90.17"></script>
@@ -29,16 +30,17 @@
 		<div class="toolbar">
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
 			<a href="javascript:;" class="share" onclick="upload();">分享</a>
-			<a href="javascript:;" id="checkJsApi">test</a>
+			<a href="javascript:;" id="checkJsApi">checkJsApi</a>
+			<a href="javascript:;" id="onMenuShareTimeline">onMenuShareTimeline</a>
 		</div>
 	</div>
 <script type="text/javascript">
 wx.config({
     debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-    appId: {$data.appId}, // 必填，公众号的唯一标识
+    appId: "{$data.appId}", // 必填，公众号的唯一标识
     timestamp: {$data.timestamp}, // 必填，生成签名的时间戳
-    nonceStr: {$data.nonceStr}, // 必填，生成签名的随机串
-    signature: {$data.signature},// 必填，签名，见附录1
+    nonceStr:"{$data.nonceStr}", // 必填，生成签名的随机串
+    signature:"{$data.signature}",// 必填，签名，见附录1
     jsApiList: ['checkJsApi',
                 'onMenuShareTimeline',
                 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
@@ -47,8 +49,8 @@ wx.ready(function(){
 	document.querySelector('#checkJsApi').onclick = function () {
 	    wx.checkJsApi({
 	      jsApiList: [
-	        'getNetworkType',
-	        'previewImage'
+	        'onMenuShareTimeline',
+	        'onMenuShareAppMessage'
 	      ],
 	      success: function (res) {
 	        alert(JSON.stringify(res));
