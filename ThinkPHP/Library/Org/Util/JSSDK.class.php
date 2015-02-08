@@ -30,7 +30,8 @@ class JSSDK {
       "timestamp" => $timestamp,
       "url"       => $url,
       "signature" => $signature,
-      "rawString" => $string
+      "rawString" => $string,
+      "jsapi_ticket" => S('jsapi_ticket')
     );
     return $signPackage; 
   }
