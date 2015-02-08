@@ -59,8 +59,6 @@ class JSSDK {
   		// 就可以避免token失效。
   		// S()是ThinkPhp的缓存函数，如果使用的是不ThinkPhp框架，可以使用你的缓存函数，或使用数据库来保存。
   		S('jsapi_ticket', $ticket, 7000);
-  		
-  		echo "jinru";
   	}
   	return $ticket;  	
   }
@@ -78,7 +76,6 @@ class JSSDK {
     	// 就可以避免token失效。
     	// S()是ThinkPhp的缓存函数，如果使用的是不ThinkPhp框架，可以使用你的缓存函数，或使用数据库来保存。
     	S('access_token', $token, 7000);
-    	echo "jinru";
     }
     return $token;
   }
