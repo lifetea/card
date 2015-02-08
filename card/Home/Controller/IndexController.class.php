@@ -10,10 +10,10 @@ class IndexController extends Controller {
     	echo "<br/>";
     	//echo $jssdk->getJsApiTicket();
     	echo "<br/>";
-    	echo $jssdk->hello();
+    	//echo $jssdk->hello();
 		//$this->display();
     }
-    public function hello(){
-    	echo "hello";
-    }
+//     public function hello(){
+//     	echo "hello";
+//     }
 }
