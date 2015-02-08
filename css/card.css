@@ -16,59 +16,92 @@ ul,li{
 	position: relative;
 	overflow: hidden;
 }
-#photo, #hitarea{
-	width: 200px;
-	height: 200px;
+#myCanvas{
 	position: absolute;
-	top: 16%;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-}
-#scene4 #photo, #scene4 #hitarea{
-	top: 20%;
+	z-index: 1;
+	display: none;
 }
 #photo{
-	z-index: 1;
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
 }
 #photo img{
 	position: relative;
 }
-#myCanvas{
-	position: absolute;
-	z-index: -1;
-}
-.scene, .animation{
+#scene, #hitarea{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0px;
 }
-.scene{
-	z-index: 2;
-}
-.opacity{
-	opacity: 0.3;
-}
-.animation{
+#scene{
+	background: url('../images/bg.gif') no-repeat;
+	background-size: 100% auto;
 	z-index: 3;
 }
-
-#scene1 .scene{
-	background: url('../images/bg3_2_1.gif') no-repeat;
+#hitarea{
+	background: url('../images/cover.png') no-repeat;
 	background-size: 100% auto;
+	z-index: 4;
 }
-#scene2 .scene{
-	background: url('../images/bg3_2_2.gif') no-repeat;
+#bingo{
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	top: 50%;
+	right: 3rem;
+	background: url('../images/bingo.png') no-repeat;
 	background-size: 100% auto;
+	z-index: 5;
 }
-#scene3 .scene{
-	background: url('../images/bg3_2_3.gif') no-repeat;
-	background-size: 100% auto;
+.hide{
+	display: none;
 }
-#scene4 .scene{
-	background: url('../images/bg.png') no-repeat;
-	background-size: 100% auto;
+#textwrap{
+	width: 40%;
+	height: 80px;
+	background: #fff;
+	border: 2px solid #ffd800;
+	border-radius: 50%;
+	position: absolute;
+	top: 10%;
+	left: 2rem;
+	z-index: 3;
+}
+#textwrap div{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	font-size: 1.6rem;
+	font-family: '微软雅黑';
+}
+#textwrap span{
+	display: block;
+	width: 2rem;
+	height: 1rem;
+	background: #fff;
+	border: 1px solid #ffd800;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -1rem;
+	right: 1rem;
+	transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
+#textwrap textarea{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	box-sizing: border-box;
+	padding: 5px;
+	display: none;
 }
 
 .money{
@@ -76,26 +109,34 @@ ul,li{
 	height: 3rem;
 	background: url('../images/money1.png') no-repeat;
 	background-size: 100% auto;
+	position: absolute;
+	top: -3rem;
+	z-index: 3;
 }
 .money2{
 	background: url('../images/money2.png') no-repeat;
 	background-size: 100% auto;
+	left: 0px;
 }
 .money3{
 	background: url('../images/money3.png') no-repeat;
 	background-size: 100% auto;
+	left: 10%;
 }
 .money4{
 	background: url('../images/money4.png') no-repeat;
 	background-size: 100% auto;
+	left: 50%;
 }
 .money5{
 	background: url('../images/money5.png') no-repeat;
 	background-size: 100% auto;
+	right: 2rem;
 }
 .money6{
 	background: url('../images/money6.png') no-repeat;
 	background-size: 100% auto;
+	right: 0px;
 }
 
 .cloud{
@@ -104,7 +145,7 @@ ul,li{
 	text-align: center;
 	position: absolute;
 	bottom: 0px;
-	z-index: 4;
+	z-index: 8;
 	background: url('../images/cloud3_2.png') no-repeat;
 	background-size: 100% auto;
 	background-position: center bottom;
@@ -120,23 +161,12 @@ ul,li{
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 }
-#hitarea{
-	border: 1px solid #fbf80a;
-	z-index: 5;
-}
-.pagination{
-	width: 100%;
-	position: absolute;
-	bottom: 5px;
-	z-index: 5;
-	text-align: center;
-}
 .toolbar{
 	width: 100%;
 	position: absolute;
 	bottom: 5%;
 	text-align: center;
-	z-index: 5;
+	z-index: 9;
 }
 .toolbar a{
 	display: inline-block;
@@ -180,6 +210,39 @@ ul,li{
 	background: url('../images/share2.png') no-repeat;
 	background-size: 100% auto;
 }
+.toolbg a.preview{
+	background: url('../images/preview2.png') no-repeat;
+	background-size: 100% auto;
+}
+
+/*cardTwo 动画*/
+.money1{
+	-webkit-animation:fall 4s linear -1s infinite;
+}
+.money2{
+	-webkit-animation:fall 5s linear 0s infinite;
+}
+.money3{
+	-webkit-animation:fall 6s linear 1s infinite;
+}
+.money4{
+	-webkit-animation:fall 5s linear 0s infinite;
+}
+.money5{
+	-webkit-animation:fall 5s linear 2s infinite;
+}
+.money6{
+	-webkit-animation:fall 4s linear -0.5s infinite;
+}
+
+@-webkit-keyframes fall{
+	0% {top:0;}
+	20%{transform:rotate(30deg);}
+	50% {top:50%;}
+	60%{transform:rotate(-30deg);}
+	100%{top:100%;}
+}
+
 
 @media only screen and (min-width : 640px){
 	.container{

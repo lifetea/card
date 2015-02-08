@@ -11,38 +11,37 @@
 <meta name="description" content="拜大年">
 <meta name="author" content="Lee">
 <title>card</title>
-<link type="text/css" rel="stylesheet" href="css/card.css?v=3.2" />
+<link type="text/css" rel="stylesheet" href="css/card.css?v=3.6" />
 <script type="text/javascript" src="js/hammer.min.js"></script>
-<script type="text/javascript" src="js/card.js?v=3.1"></script>
+<script type="text/javascript" src="js/card.js?v=3.6"></script>
 </head>
 <body>
 	<div class="container" id="scene4">
-		<!-- <audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio> -->
+		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas" width="200" height="200">不支持HTML5 canvas</canvas>
 		<div id="photo"><img src="" id="image" /></div>
 		<div class="scene"></div>
-		<div class="animation">
-			<div class="money money1"></div>
-			<div class="money money2"></div>
-			<div class="money money3"></div>
-			<div class="money money4"></div>
-			<div class="money money5"></div>
-			<div class="money money6"></div>
-		</div>
+		<div id="textwrap"><div></div><textarea id="textarea"></textarea><span></span></div>
+		
+		<div class="money money1"></div>
+		<div class="money money2"></div>
+		<div class="money money3"></div>
+		<div class="money money4"></div>
+		<div class="money money5"></div>
+		<div class="money money6"></div>
+		
 		<div id="hitarea"></div>
 		
 		<div class="toolbar toolbg">
 			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
-			<a href="javascript:;" class="preview" onclick="preview();">预览</a>
-			<a href="javascript:;" class="share" onclick="upload();">分享</a>
+			<a href="javascript:;" class="preview" onclick="preview2();">预览</a>
+			<a href="javascript:;" class="share" onclick="upload2();">分享</a>
 		</div>
 	</div>
 	<script type="text/javascript">
 	window.onload = function() {
 		init();
-		
-		//动画
-		
+		initText();
 	}
 	</script>
 </body>
