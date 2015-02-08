@@ -6,12 +6,11 @@ include "../Common/test.php";
 class IndexController extends Controller {
     public function index(){
     	$jssdk = new \Org\Util\JSSDK();
-    	echo $jssdk->getAccessToken();
-    	echo "<br/>";
+    	$signPackage = $jssdk->getSignPackage();
     	//echo $jssdk->getJsApiTicket();
-    	echo "<br/>";
     	//echo $jssdk->hello();
-		//$this->display();
+    	$this->assign('data',$signPackage);
+		$this->display();
     }
 //     public function hello(){
 //     	echo "hello";

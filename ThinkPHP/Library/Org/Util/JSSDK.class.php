@@ -5,8 +5,8 @@ class JSSDK {
   private $appSecret;
 
   public function __construct($appId, $appSecret) {
-    $this->appId = $appId;
-    $this->appSecret = $appSecret;
+    $this->appId = "wx1c5619b4d24d1301";
+    $this->appSecret = "97df1cbc025cedb005924b0871b9280e";
   }
 
   public function getSignPackage() {
