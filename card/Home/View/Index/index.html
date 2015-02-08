@@ -1,1 +1,111 @@
- Email��{$data.appId}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta name="description" content="拜大年">
+<meta name="author" content="Lee">
+<title>card</title>
+<link type="text/css" rel="stylesheet" href="css/card.css?v=90.17" />
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/card.js?v=90.17"></script>
+</head>
+<body>
+	<div class="container">
+		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
+		<canvas id="myCanvas">不支持HTML5 canvas</canvas>
+		
+		<div id="photo"><img src="" id="image" /></div>
+		<div id="scene"></div>
+		<div id="hitarea" class="hide"></div>
+		<div id="bingo" class="hide" onclick="clipPhoto();"></div>
+		
+		<div class="cloud"><a href="#" class="download">下载APP</a><img src="" id="he" width="100" /></div>
+		<div class="toolbar">
+			<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
+			<a href="javascript:;" class="share" onclick="upload();">分享</a>
+			<a href="javascript:;" id="checkJsApi">test</a>
+		</div>
+	</div>
+<script type="text/javascript">
+wx.config({
+    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: {$data.appId}, // 必填，公众号的唯一标识
+    timestamp: {$data.timestamp}, // 必填，生成签名的时间戳
+    nonceStr: {$data.nonceStr}, // 必填，生成签名的随机串
+    signature: {$data.signature},// 必填，签名，见附录1
+    jsApiList: ['checkJsApi',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+});
+wx.ready(function(){
+	document.querySelector('#checkJsApi').onclick = function () {
+	    wx.checkJsApi({
+	      jsApiList: [
+	        'getNetworkType',
+	        'previewImage'
+	      ],
+	      success: function (res) {
+	        alert(JSON.stringify(res));
+	      }
+	    });
+	  };
+	  // 2. 分享接口
+	  // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
+	  document.querySelector('#onMenuShareAppMessage').onclick = function () {
+	    wx.onMenuShareAppMessage({
+	      title: '互联网之子',
+	      desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+	      link: 'http://movie.douban.com/subject/25785114/',
+	      imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+	      trigger: function (res) {
+	        alert('用户点击发送给朋友');
+	      },
+	      success: function (res) {
+	        alert('已分享');
+	      },
+	      cancel: function (res) {
+	        alert('已取消');
+	      },
+	      fail: function (res) {
+	        alert(JSON.stringify(res));
+	      }
+	    });
+	    alert('已注册获取“发送给朋友”状态事件');
+	  };
+	  // 2.2 监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+	  document.querySelector('#onMenuShareTimeline').onclick = function () {
+	    wx.onMenuShareTimeline({
+	      title: '互联网之子',
+	      link: 'http://movie.douban.com/subject/25785114/',
+	      imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+	      trigger: function (res) {
+	        alert('用户点击分享到朋友圈');
+	      },
+	      success: function (res) {
+	        alert('已分享');
+	      },
+	      cancel: function (res) {
+	        alert('已取消');
+	      },
+	      fail: function (res) {
+	        alert(JSON.stringify(res));
+	      }
+	    });
+	    alert('已注册获取“分享到朋友圈”状态事件');
+	  };
+    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+});
+wx.error(function(res){
+
+    // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+
+});
+</script>	
+</body>
+</html>
