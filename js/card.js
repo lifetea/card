@@ -127,6 +127,37 @@ function upload(){
 	}
 	if(!confirm('你确定要分享吗？')) return false;
 	
+	var dataURL = snapshot();
+	//这个就是截图的dataURL
+	//alert(dataURL);
+	//你可以用下面这句看到截图后的图片
+//	document.body.innerHTML = '<img src="'+dataURL+'" />';
+
+	var fd = new FormData();
+	fd.append("photofile", dataURL2blob(dataURL));
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'upload.php');//第二个参数是请求地址
+	xhr.upload.onprogress = function(e) {
+	    if (e.lengthComputable) {
+	      var percentComplete = (e.loaded / e.total) * 100;
+	      console.log(percentComplete + '% uploaded');
+	    }
+  	};
+	xhr.onload = function() {
+		shareTimeline();
+//		document.title = "在这里给大家拜年了";
+//		var proView = document.getElementById("proView");
+//		proView.src="uploads/snapshot/"+getId()+".jpg";
+	}
+	xhr.send(fd);	
+	/*
+	fd.append("id", getId());
+	//getCookie("id")
+
+*/	
+}
+
+function snapshot(){
 	/*获截图*/
 	ctx.clearRect(0, 0, cWidth, cHeight);
 	/*计算截图数据*/
@@ -150,21 +181,38 @@ function upload(){
 	
 	ctx.drawImage(image, il, it, pw/zoom, ph/zoom, cl, ct, pw, ph);
 	
-	var dataURL = canvas.toDataURL();
-	//这个就是截图的dataURL
-	//alert(dataURL);
-	//你可以用下面这句看到截图后的图片
-	//document.body.innerHTML = '<img src="'+dataURL+'" />';
-
-	return false;
+	var dataURL = canvas.toDataURL("image/jpeg");
 	
-	var xhr = new XMLHttpRequest();
-	xhr.open('POST', '');//第二个参数是请求地址
-	var boundary = '----------ei4GI3gL6gL6ae0ei4cH2Ef1gL6GI3';
-	xhr.setRequestHeader('Content-Type', 'multipart/form-data; boundary='+ boundary);	
-	xhr.onload = function() {
-		alert('success');
-	};
-	xhr.send(file);
+	return dataURL;
 }
 
+function dataURL2blob(dataURL){
+	dataURL=dataURL.split(',')[1];
+	dataURL=window.atob(dataURL);
+	var ia = new Uint8Array(dataURL.length);
+	for (var i = 0; i < dataURL.length; i++) {
+	    ia[i] = dataURL.charCodeAt(i);
+	};
+	var blob=new Blob([ia], {type:"image/jpg"});
+	return blob;
+}
+
+function shareTimeline(){
+    wx.onMenuShareTimeline({
+	      title: '互联网之子',
+	      link: 'http://movie.douban.com/subject/25785114/',
+	      imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+	      trigger: function (res) {
+	        alert('用户点击分享到朋友圈');
+	      },
+	      success: function (res) {
+	        alert('已分享');
+	      },
+	      cancel: function (res) {
+	        alert('已取消');
+	      },
+	      fail: function (res) {
+	        alert(JSON.stringify(res));
+	      }
+	    });
+}
