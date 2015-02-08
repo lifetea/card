@@ -1,3 +1,0 @@
-<?php
-//000000007000s:102:"ghegerjgbergberugbeurgbeugbeugbeguebgbeugbeugbuebguerbuergergergregergergerggggggggggggggggg1423385322";
-?>

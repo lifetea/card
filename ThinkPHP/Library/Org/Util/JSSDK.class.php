@@ -64,7 +64,6 @@ class JSSDK {
   }
   
   public function getAccessToken() {
-  	S('access_token',null);
     $token = S('access_token');
     if (!$token) {
     	$res = file_get_contents('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx1c5619b4d24d1301&secret=97df1cbc025cedb005924b0871b9280e');
@@ -76,7 +75,6 @@ class JSSDK {
     	// 因此，这里将token值缓存1小时，比2小时小。缓存失效后，再从接口获取新的token，这样
     	// 就可以避免token失效。
     	// S()是ThinkPhp的缓存函数，如果使用的是不ThinkPhp框架，可以使用你的缓存函数，或使用数据库来保存。
-    	echo $token;
     	S('access_token', $token, 7000);
     }
     return $token;
