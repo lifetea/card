@@ -131,7 +131,7 @@ function upload(){
 	//这个就是截图的dataURL
 	//alert(dataURL);
 	//你可以用下面这句看到截图后的图片
-//	document.body.innerHTML = '<img src="'+dataURL+'" />';
+	document.body.innerHTML = '<img src="'+dataURL+'" />';
 
 	var fd = new FormData();
 	fd.append("photofile", dataURL2blob(dataURL));
