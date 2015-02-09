@@ -127,33 +127,12 @@ function upload(){
 	}
 	if(!confirm('你确定要分享吗？')) return false;
 	
-	ctx.clearRect(0, 0, cWidth, cHeight);
-	/*计算截图数据*/
-	var il = pLeft > 0 ? 0 : -pLeft/zoom;
-	var it = pLeft > 0 ? 0 : -pTop/zoom;
 	
-	var cl = pLeft > 0 ? pLeft : 0;
-	var ct = pTop > 0 ? pTop : 0;
-	
-	var w = image.offsetWidth;
-	var h = image.offsetHeight;
-	
-	var pw = 0;
-	if(pLeft < 0){
-		pw = (w + pLeft) < cWidth ? (w + pLeft) : cWidth;
-	}else{
-		pw = (w + pLeft) < cWidth ? w : cWidth - pLeft;
-	}
-	
-	var ph = h > cHeight ? cHeight : h;
-	
-	ctx.drawImage(image, il, it, pw/zoom, ph/zoom, cl, ct, pw, ph);
-	
-	var dataURL = canvas.toDataURL("image/jpeg");
+	var dataURL = snapshot();
 	//这个就是截图的dataURL
 	//alert(dataURL);
 	//你可以用下面这句看到截图后的图片
-	document.body.innerHTML = '<img src="'+dataURL+'" />';
+	//document.body.innerHTML = '<img src="'+dataURL+'" />';
 
 	var fd = new FormData();
 	fd.append("photofile", dataURL2blob(dataURL));
@@ -168,6 +147,7 @@ function upload(){
   	};
 	xhr.onload = function() {
 		shareTimeline();
+		shareAppMessage();
 //		document.title = "在这里给大家拜年了";
 //		var proView = document.getElementById("proView");
 //		proView.src="uploads/snapshot/"+getId()+".jpg";
@@ -238,6 +218,27 @@ function shareTimeline(){
 	        alert(JSON.stringify(res));
 	      }
 	    });
+}
+
+function shareAppMessage(){
+	wx.onMenuShareAppMessage({
+	    title: "艺人驾到 祝您羊年大吉，生意兴隆!",
+	    desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+	    link: 'http://card.greenco.com.cn/index.php?id='+getId(),
+	    imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+getId()+'.jpg',
+	    trigger: function (res) {
+	      //alert('用户点击发送给朋友');
+	    },
+	    success: function (res) {
+	      //alert('已分享');
+	    },
+	    cancel: function (res) {
+	      //alert('已取消');
+	    },
+	    fail: function (res) {
+	      alert(JSON.stringify(res));
+	    }
+	  });
 }
 
 function addCookie(name,value,expiresHours){ 
