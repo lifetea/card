@@ -12,7 +12,7 @@ class IndexController extends Controller {
     	$this->assign('data',$signPackage);
     	$pic = '';
     	if($_GET['id']){
-    		$pic ="http://card.greenco.com.cn/uploads/avatar/". $_GET['id']."jpg";
+    		$pic ="http://card.greenco.com.cn/uploads/avatar/". $_GET['id'].".jpg";
     	}
     	echo $pic;
     	$this->assign('pic',$pic);
