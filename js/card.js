@@ -127,7 +127,29 @@ function upload(){
 	}
 	if(!confirm('你确定要分享吗？')) return false;
 	
-	var dataURL = snapshot();
+	ctx.clearRect(0, 0, cWidth, cHeight);
+	/*计算截图数据*/
+	var il = pLeft > 0 ? 0 : -pLeft/zoom;
+	var it = pLeft > 0 ? 0 : -pTop/zoom;
+	
+	var cl = pLeft > 0 ? pLeft : 0;
+	var ct = pTop > 0 ? pTop : 0;
+	
+	var w = image.offsetWidth;
+	var h = image.offsetHeight;
+	
+	var pw = 0;
+	if(pLeft < 0){
+		pw = (w + pLeft) < cWidth ? (w + pLeft) : cWidth;
+	}else{
+		pw = (w + pLeft) < cWidth ? w : cWidth - pLeft;
+	}
+	
+	var ph = h > cHeight ? cHeight : h;
+	
+	ctx.drawImage(image, il, it, pw/zoom, ph/zoom, cl, ct, pw, ph);
+	
+	var dataURL = canvas.toDataURL("image/jpeg");
 	//这个就是截图的dataURL
 	//alert(dataURL);
 	//你可以用下面这句看到截图后的图片
