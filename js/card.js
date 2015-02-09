@@ -199,17 +199,17 @@ function dataURL2blob(dataURL){
 
 function shareTimeline(){
     wx.onMenuShareTimeline({
-	      title: '互联网之子',
-	      link: 'http://movie.douban.com/subject/25785114/',
-	      imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+	      title: '艺人驾到 祝您羊年大吉，生意兴隆！',
+	      link: 'http://card.greenco.com.cn/',
+	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/111.jpg',
 	      trigger: function (res) {
-	        alert('用户点击分享到朋友圈');
+	        //alert('用户点击分享到朋友圈');
 	      },
 	      success: function (res) {
 	        alert('已分享');
 	      },
 	      cancel: function (res) {
-	        alert('已取消');
+	        //alert('已取消');
 	      },
 	      fail: function (res) {
 	        alert(JSON.stringify(res));
