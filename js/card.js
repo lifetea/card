@@ -201,8 +201,8 @@ function dataURL2blob(dataURL){
 function shareTimeline(){
     wx.onMenuShareTimeline({
 	      title: '艺人驾到 祝您羊年大吉，生意兴隆！',
-	      link: 'http://card.greenco.com.cn/',
-	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/111.jpg',
+	      link: 'http://card.greenco.com.cn/index.php?id='+getId(),
+	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+getId()+'.jpg',
 	      trigger: function (res) {
 	        //alert('用户点击分享到朋友圈');
 	      },
