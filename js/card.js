@@ -200,7 +200,7 @@ function dataURL2blob(dataURL){
 
 function shareTimeline(){
     wx.onMenuShareTimeline({
-	      title: '艺人驾到 祝您羊年大吉，生意兴隆！',
+	      title: "艺人驾到 祝您羊年大吉，生意兴隆!",
 	      link: 'http://card.greenco.com.cn/index.php?id='+getId(),
 	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+getId()+'.jpg',
 	      trigger: function (res) {
