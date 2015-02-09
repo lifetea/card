@@ -1,4 +1,4 @@
-﻿var file = null;
+﻿﻿var file = null;
 
 var canvas = null;
 var ctx = null;
