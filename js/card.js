@@ -152,7 +152,6 @@ function upload(){
 		shareTimeline();
 		shareAppMessage();
 	}
-	
 	html2canvas(document.getElementById('photo'), {
 		  onrendered: function(canvas) {
 			  var dataURL = canvas.toDataURL("image/png");
