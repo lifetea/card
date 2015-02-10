@@ -45,7 +45,7 @@ function init(){
 
 function selectPhoto(){
 	var photofile = document.getElementById('photofile');
-	
+	document.getElementById('shareicon').style.display = 'none';
 	var fReader = new FileReader();
 	fReader.onloadend = function(e){
 		image.src = e.target.result;
