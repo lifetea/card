@@ -103,8 +103,7 @@ function clipPhoto(){
 	document.getElementById('scene').className = '';
 	document.getElementById('hitarea').className = 'hide';
 	document.getElementById('bingo').className = 'hide';
-	shareTimeline();
-	shareAppMessage();
+	upload();
 }
 
 function initText(){
@@ -123,12 +122,15 @@ function preview2(){
 	textwrap.childNodes[0].innerHTML = textarea.value;
 }
 
-function upload(){
+function share(){
 	if(file == null) {
 		alert('你还没有上传照片');
 		return false;
 	}
-	if(!confirm('你确定要分享吗？')) return false;
+}
+
+function upload(){
+	//if(!confirm('你确定要分享吗？')) return false;
 	
 	
 	//var dataURL = snapshot();
