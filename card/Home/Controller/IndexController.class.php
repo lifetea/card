@@ -14,10 +14,9 @@ class IndexController extends Controller {
     	if($_GET['id']){
     		$pic ="http://card.greenco.com.cn/uploads/avatar/". $_GET['id'].".jpg";
     	}
+    	session('id',time());
+    	$this->assign('id',session('id'));
     	$this->assign('pic',$pic);
 		$this->display();
     }
-//     public function hello(){
-//     	echo "hello";
-//     }
 }

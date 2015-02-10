@@ -1,5 +1,5 @@
-﻿﻿var file = null;
-
+﻿﻿﻿var file = null;
+var userId = null;
 var canvas = null;
 var ctx = null;
 var cWidth = 0;
@@ -20,6 +20,7 @@ window.onload = function() {
 }
 
 function init(){
+	userId = getId();
 	var container = document.getElementsByClassName('container')[0];
 	cWidth = container.offsetWidth;
 	cHeight = container.offsetHeight * 0.6;
@@ -102,6 +103,8 @@ function clipPhoto(){
 	document.getElementById('scene').className = '';
 	document.getElementById('hitarea').className = 'hide';
 	document.getElementById('bingo').className = 'hide';
+	shareTimeline();
+	shareAppMessage();
 }
 
 function initText(){
@@ -135,7 +138,7 @@ function upload(){
 
 	var fd = new FormData();
 	
-	fd.append("id", getId());
+	fd.append("id", userId);
 	var xhr = new XMLHttpRequest();
 	xhr.open('POST', 'upload.php');//第二个参数是请求地址
 	xhr.upload.onprogress = function(e) {
@@ -173,8 +176,8 @@ function dataURL2blob(dataURL){
 function shareTimeline(){
     wx.onMenuShareTimeline({
 	      title: "艺人驾到 祝您羊年大吉，生意兴隆!",
-	      link: 'http://card.greenco.com.cn/index.php?id='+getId(),
-	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+getId()+'.jpg',
+	      link: 'http://card.greenco.com.cn/index.php?id='+userId,
+	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+userId+'.jpg',
 	      trigger: function (res) {
 	        //alert('用户点击分享到朋友圈');
 	      },
@@ -194,8 +197,8 @@ function shareAppMessage(){
 	wx.onMenuShareAppMessage({
 	    title: "艺人驾到 祝您羊年大吉，生意兴隆!",
 	    //desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
-	    link: 'http://card.greenco.com.cn/index.php?id='+getId(),
-	    imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+getId()+'.jpg',
+	    link: 'http://card.greenco.com.cn/index.php?id='+userId,
+	    imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+userId+'.jpg',
 	    trigger: function (res) {
 	      //alert('用户点击发送给朋友');
 	    },
@@ -211,30 +214,7 @@ function shareAppMessage(){
 	  });
 }
 
-function addCookie(name,value,expiresHours){ 
-	var cookieString=name+"="+escape(value); 
-	//判断是否设置过期时间 
-	if(expiresHours>0){ 
-		var date=new Date(); 
-		date.setTime(date.getTime+expiresHours*3600*1000); 
-		cookieString=cookieString+"; expires="+date.toGMTString(); 
-	} 
-	document.cookie=cookieString; 
-}
-function getCookie(name){ 
-	var strCookie=document.cookie; 
-	var arrCookie=strCookie.split("; "); 
-	for(var i=0;i<arrCookie.length;i++){ 
-	var arr=arrCookie[i].split("="); 
-	if(arr[0]==name)return arr[1]; 
-	} 
-	return ""; 
-}
 function getId(){
-	var id = getCookie("id");
-	if(!id){
-		var timestamp = new Date().getTime(); 
-		addCookie("id",timestamp+'',12);
-	}
-	return getCookie("id");
+	var  a = document.getElementById("userId")
+	return a.value;
 }
