@@ -47,15 +47,31 @@ ul,li{
 	background-size: 100% auto;
 	z-index: 4;
 }
-#bingo{
+#rotateRight, #rotateLeft, #bingo{
 	width: 4rem;
-	height: 4rem;
+	height: 5rem;
 	position: absolute;
 	top: 50%;
-	right: 3rem;
+	z-index: 5;
+}
+#rotateRight{
+	background: url('images/rotateRight.png') no-repeat;
+	background-size: 100% auto;
+	left: 2rem;
+}
+#rotateLeft{
+	background: url('images/rotateLeft.png') no-repeat;
+	background-size: 100% auto;
+	right: 2rem;
+}
+#bingo{
+	width: 6rem;
 	background: url('images/bingo.png') no-repeat;
 	background-size: 100% auto;
-	z-index: 5;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 }
 .hide{
 	display: none;
@@ -111,7 +127,14 @@ ul,li{
 	float: right;
 	margin-right: 10%;
 }
-
+.shareicon{
+	width: 320px;
+	height: 139px;
+	display: none;
+	z-index: 100;
+	position: absolute;
+	right: 0px;
+}
 @media only screen and (min-width : 640px){
 	.container{
 		width: 400px;

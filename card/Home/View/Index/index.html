@@ -11,28 +11,31 @@
 <meta name="description" content="拜大年">
 <meta name="author" content="Lee">
 <title>艺人驾到</title>
-<link type="text/css" rel="stylesheet" href="css/card.css?v=90.17" />
-<script type="text/javascript" src="js/hammer.min.js"></script>
-<script type="text/javascript" src="js/card.js?v=90.17"></script>
-<script type="text/javascript" src="js/html2canvas.js?v=3.0"></script>
+<link type="text/css" rel="stylesheet" href="src/card.css" />
+<script type="text/javascript" src="src/hammer.min.js"></script>
+<script type="text/javascript" src="src/card.js"></script>
 </head>
 <body>
 	<div class="container">
-	<!-- 
-		<audio src="newYear.mp3" autoplay="autoplay" loop="loop"></audio>
-	 -->
+		<audio src="src/newYear.mp3" autoplay="autoplay" loop="loop"></audio>
 		<canvas id="myCanvas">不支持HTML5 canvas</canvas>
+		<!-- 新页面默认是who.jpg，如果是分享的就写分享的图片地址 -->
+		<div id="photo"><img src="{$pic}" /></div>
 		<input  id="userId" value="{$id}"  type="hidden" />
-		<a href="javascript:;"  id="shareicon"  class="shareicon"><img src="./images/shareicon.png"/></a>
-		<div id="photo"><img src="{$pic}" id="image" /></div>
+		<a href="javascript:;"  id="shareicon"  class="shareicon"><img src="src/images/shareicon.png"/></a>
 		<div id="scene"></div>
 		<div id="hitarea" class="hide"></div>
+		
+		<div id="rotateRight" class="hide" onclick="rotateRight();"></div>
+		<div id="rotateLeft" class="hide" onclick="rotateLeft();"></div>
 		<div id="bingo" class="hide" onclick="clipPhoto();"></div>
 		
-		<div class="cloud"><a href="#" class="download">下载APP</a><img src="" id="he" width="100" /></div>
-		<div class="toolbar">
-			<a href="javascript:;" class="takephoto"><input id="photofile"  name="photofile"  type="file" accept="image/*" onchange="selectPhoto();" /></a>
-			<a href="javascript:;" class="share" onclick="share();">分享</a>
+		<div class="cloud">
+			<div class="toolbar">
+				<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
+				<a href="https://itunes.apple.com/cn/app/yi-ren-jia-dao/id946828378?mt=8&uo=4" class="download">下载App</a>
+				<a href="javascript:;" class="share" onclick="share();">分享</a>
+			</div>
 		</div>
 	</div>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
