@@ -68,6 +68,9 @@ function initPhoto(){
 		if(srcWidth > cWidth) zoom = cWidth / srcWidth;
 		
 		ctx.translate(cWidth * 0.5, cHeight * 0.5);
+		if(srcWidth>srcHeight){
+			angle += 90;
+		}
 		drawImage();
 		
 		/*移动*/
