@@ -214,7 +214,14 @@ ul,li{
 	background: url('../images/preview2.png') no-repeat;
 	background-size: 100% auto;
 }
-
+.shareicon{
+	width: 320px;
+	height: 139px;
+	display: none;
+	z-index: 100;
+	position: absolute;
+	right: 0px;
+}
 /*cardTwo 动画*/
 .money1{
 	-webkit-animation:fall 4s linear -1s infinite;

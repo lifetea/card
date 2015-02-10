@@ -127,12 +127,11 @@ function share(){
 		alert('你还没有上传照片');
 		return false;
 	}
+	document.getElementById('shareicon').style.display = 'block';
+	//if(!confirm('你确定要分享吗？')) return false;
 }
 
 function upload(){
-	//if(!confirm('你确定要分享吗？')) return false;
-	
-	
 	//var dataURL = snapshot();
 	//这个就是截图的dataURL
 	//alert(dataURL);
@@ -146,7 +145,7 @@ function upload(){
 	xhr.upload.onprogress = function(e) {
 	    if (e.lengthComputable) {
 	      var percentComplete = (e.loaded / e.total) * 100;
-	      console.log(percentComplete + '% uploaded');
+	      //console.log(percentComplete + '% uploaded');
 	    }
   	};
 	xhr.onload = function() {
