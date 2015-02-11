@@ -9,7 +9,7 @@ var image = null;
 var srcWidth = 0;
 var srcHeight = 0;
 
-var zoomDelta = 0.02;
+var zoomDelta = 0.015;
 
 var mc = null;
 var zoom = 1;
@@ -75,7 +75,7 @@ function initPhoto(){
 		
 		/*移动*/
 		mc.on("panmove", function(ev) {
-			ctx.translate(ev.deltaX * 0.05, ev.deltaY * 0.05);
+			ctx.translate(ev.deltaX * 0.08, ev.deltaY * 0.08);
 			drawImage();
 		});
 		/*缩放*/
@@ -117,6 +117,8 @@ function clipPhoto(){
 	document.getElementById('bingo').className = 'hide';
 	upload();
 }
+
+
 function share(){
 	if(file == null) {
 		alert('你还没有上传照片');
@@ -214,3 +216,4 @@ function getId(){
 	var  a = document.getElementById("userId")
 	return a.value;
 }
+
