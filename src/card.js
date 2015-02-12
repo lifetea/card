@@ -1,4 +1,4 @@
-﻿﻿﻿﻿var file = null;
+﻿﻿﻿﻿﻿var file = null;
 var userId = null;
 var canvas = null;
 var ctx = null;
@@ -9,11 +9,12 @@ var image = null;
 var srcWidth = 0;
 var srcHeight = 0;
 
-var zoomDelta = 0.015;
-
 var mc = null;
 var zoom = 1;
 var angle = 0;
+var translateX = 0;
+var translateY = 0;
+var isFirst = true;
 
 window.onload = function() { 
 	init();
@@ -54,6 +55,9 @@ function initPhoto(){
 	zoom = 1;
 	angle = 0;
 	
+	translateX = isFirst == true ? cWidth * 0.5 : -translateX;
+	translateY = isFirst == true ? cHeight * 0.5 : -translateY;
+	
 	image.onload = function(){	
 		document.getElementById('photo').className = 'hide';
 		document.getElementById('scene').className = 'hide';
@@ -67,25 +71,37 @@ function initPhoto(){
 		
 		if(srcWidth > cWidth) zoom = cWidth / srcWidth;
 		
-		ctx.translate(cWidth * 0.5, cHeight * 0.5);
+		ctx.translate(translateX, translateY);
 		if(srcWidth>srcHeight){
 			angle += 90;
-		}
+		}		
 		drawImage();
+		isFirst = false;
+		translateX = 0;
+		translateY = 0;
 		
+		var left = 0;
+		var top = 0;
 		/*移动*/
 		mc.on("panmove", function(ev) {
-			ctx.translate(ev.deltaX * 0.08, ev.deltaY * 0.08);
+			ctx.translate(ev.deltaX - left, ev.deltaY - top);
 			drawImage();
+			left = ev.deltaX;
+			top = ev.deltaY;
+		});
+		mc.on("panend", function(ev) {
+			translateX = ev.deltaX;
+			translateY = ev.deltaY;
+			left = 0;
+			top = 0;
 		});
 		/*缩放*/
 		mc.on("pinchin", function(ev) {
-			zoom -= zoomDelta;
-			if(zoom <= 0) zoom = zoomDelta;
+			zoom = zoom * 0.98;
 			drawImage();
 		});
 		mc.on("pinchout", function(ev) {
-			zoom += zoomDelta;
+			zoom = zoom * 1.02;
 			drawImage();
 		});
 	};
@@ -216,4 +232,3 @@ function getId(){
 	var  a = document.getElementById("userId")
 	return a.value;
 }
-
