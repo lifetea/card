@@ -210,7 +210,7 @@ function shareTimeline(){
 function shareAppMessage(){
 	wx.onMenuShareAppMessage({
 	    title: "艺人驾到 祝您羊年大吉，生意兴隆!",
-	    //desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+	    desc: '大秤分金虚席以待，足不出户生意兴隆。艺人驾到让你有钱，任性！',
 	    link: 'http://card.greenco.com.cn/index.php?id='+userId,
 	    imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+userId+'.jpg',
 	    trigger: function (res) {
