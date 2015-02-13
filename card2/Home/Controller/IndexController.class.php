@@ -14,7 +14,7 @@ class IndexController extends Controller {
     	if($_GET['id']){
     		$pic ="http://card.greenco.com.cn/uploads/avatar/". $_GET['id'].".jpg";
     	}else{
-    		$pic = "src/images/who.jpg";
+    		$pic = "src/images/who2.jpg";
     	}
     	session('id',time());
     	$this->assign('id',session('id'));
