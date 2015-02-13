@@ -42,10 +42,26 @@ ul,li{
 	background-size: 100% auto;
 	z-index: 3;
 }
+#container2 #scene{
+	background: url('images/bg2.gif') no-repeat;
+	background-size: 100% auto;
+}
+#container3 #scene{
+	background: url('images/bg3.gif') no-repeat;
+	background-size: 100% auto;
+}
 #hitarea{
 	background: url('images/cover.png') no-repeat;
 	background-size: 100% auto;
 	z-index: 4;
+}
+#container2 #hitarea{
+	background: url('images/cover2.png') no-repeat;
+	background-size: 100% auto;
+}
+#container3 #hitarea{
+	background: url('images/cover3.png') no-repeat;
+	background-size: 100% auto;
 }
 #rotateRight, #rotateLeft, #bingo{
 	width: 4rem;

@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿var file = null;
+﻿﻿﻿﻿﻿﻿var file = null;
 var userId = null;
 var canvas = null;
 var ctx = null;
@@ -15,6 +15,7 @@ var angle = 0;
 var translateX = 0;
 var translateY = 0;
 var isFirst = true;
+var isPinch = false;
 
 window.onload = function() { 
 	init();
@@ -84,18 +85,23 @@ function initPhoto(){
 		var top = 0;
 		/*移动*/
 		mc.on("panmove", function(ev) {
+			if(isPinch) return false;
 			ctx.translate(ev.deltaX - left, ev.deltaY - top);
 			drawImage();
 			left = ev.deltaX;
 			top = ev.deltaY;
 		});
 		mc.on("panend", function(ev) {
+			if(isPinch) return false;
 			translateX = ev.deltaX;
 			translateY = ev.deltaY;
 			left = 0;
 			top = 0;
 		});
 		/*缩放*/
+		mc.on("pinchstart", function(ev) {
+			isPinch = true;
+		});
 		mc.on("pinchin", function(ev) {
 			zoom = zoom * 0.98;
 			drawImage();
@@ -103,6 +109,9 @@ function initPhoto(){
 		mc.on("pinchout", function(ev) {
 			zoom = zoom * 1.02;
 			drawImage();
+		});
+		mc.on("pinchend", function(ev) {
+			isPinch = false;
 		});
 	};
 }

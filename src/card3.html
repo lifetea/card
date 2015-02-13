@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta name="description" content="拜大年">
+<meta name="author" content="Lee">
+<title>card</title>
+<link type="text/css" rel="stylesheet" href="src/card.css" />
+<script type="text/javascript" src="src/hammer.min.js"></script>
+<script type="text/javascript" src="src/card.js"></script>
+</head>
+<body>
+	<div class="container" id="container3">
+		<audio src="src/newYear.mp3" autoplay="autoplay" loop="loop"></audio>
+		<canvas id="myCanvas">不支持HTML5 canvas</canvas>
+		
+		<div id="photo"><img src="src/images/who3.jpg" /></div>
+		<div id="scene"></div>
+		<div id="hitarea" class="hide"></div>
+		
+		<div id="rotateRight" class="hide" onclick="rotateRight();"></div>
+		<div id="rotateLeft" class="hide" onclick="rotateLeft();"></div>
+		<div id="bingo" class="hide" onclick="clipPhoto();"></div>
+		
+		<div class="cloud">
+			<div class="toolbar">
+				<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
+				<a href="#" class="download">下载App</a>
+				<a href="javascript:;" class="share" onclick="upload();">分享</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
