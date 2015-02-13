@@ -62,6 +62,7 @@ function initPhoto(){
 	image.onload = function(){	
 		document.getElementById('photo').className = 'hide';
 		document.getElementById('scene').className = 'hide';
+		document.getElementById('gifHack').className = 'hide';
 		document.getElementById('hitarea').className = '';
 		document.getElementById('rotateRight').className = '';
 		document.getElementById('rotateLeft').className = '';
@@ -136,6 +137,7 @@ function drawImage() {
 
 function clipPhoto(){
 	document.getElementById('scene').className = '';
+	document.getElementById('gifHack').className = '';
 	document.getElementById('hitarea').className = 'hide';
 	document.getElementById('rotateRight').className = 'hide';
 	document.getElementById('rotateLeft').className = 'hide';
