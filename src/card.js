@@ -199,7 +199,7 @@ function dataURL2blob(dataURL){
 function shareTimeline(){
     wx.onMenuShareTimeline({
 	      title: "艺人驾到 祝您羊年大吉，生意兴隆!",
-	      link: 'http://card.greenco.com.cn/index.php?id='+userId,
+	      link: window.conf["link"]+userId,
 	      imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+userId+'.jpg',
 	      trigger: function (res) {
 	        //alert('用户点击分享到朋友圈');
@@ -220,7 +220,7 @@ function shareAppMessage(){
 	wx.onMenuShareAppMessage({
 	    title: "艺人驾到 祝您羊年大吉，生意兴隆!",
 	    desc: '大秤分金虚席以待，足不出户生意兴隆。艺人驾到让你有钱，任性！',
-	    link: 'http://card.greenco.com.cn/index.php?id='+userId,
+	    link: window.conf["link"]+userId,
 	    imgUrl: 'http://card.greenco.com.cn/uploads/avatar/'+userId+'.jpg',
 	    trigger: function (res) {
 	      //alert('用户点击发送给朋友');
