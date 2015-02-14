@@ -24,6 +24,7 @@
 		<input  id="userId" value="<?php echo ($id); ?>"  type="hidden" />
 		<a href="javascript:;"  id="shareicon"  class="shareicon"><img src="src/images/shareicon.png"/></a>
 		<div id="scene"></div>
+		<div id="gifHack" style="background: url('src/images/bg-2.png') no-repeat;background-size: 100% auto;" ></div>
 		<div id="hitarea" class="hide"></div>
 		
 		<div id="rotateRight" class="hide" onclick="rotateRight();"></div>
@@ -33,7 +34,7 @@
 		<div class="cloud">
 			<div class="toolbar">
 				<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
-				<a href="http://www.baidu.com"  class="download"  ">下载App</a>
+				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.artistagent"  class="download"  ">下载App</a>
 				<a href="javascript:;" class="share" onclick="share();">分享</a>
 			</div>
 		</div>
@@ -64,6 +65,9 @@ wx.error(function(res){
     // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
 
 });
+window.conf ={
+		"link":"http://card.greenco.com.cn/card2.php?id="
+	}
 </script>	
 </body>
 </html>
