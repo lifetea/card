@@ -1,0 +1,96 @@
+[ 2015-02-14T08:47:27+08:00 ] 127.0.0.1 /card/card2.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx1c5619b4d24d1301&amp;secret=97df1cbc025cedb005924b0871b9280e) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/d86c828583c5c6160e8acfee88ba1590.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&amp;access_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/e344c187b5ce3b018775638c2dc0c114.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8] Undefined index: id D:\git\card\card2\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined index: string D:\git\card\card2\Runtime\Cache\Home\8fc23dac70ed15637be9ce323f30dc19.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2015-02-14T08:48:08+08:00 ] 127.0.0.1 /card/card2.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx1c5619b4d24d1301&amp;secret=97df1cbc025cedb005924b0871b9280e) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/d86c828583c5c6160e8acfee88ba1590.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&amp;access_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/e344c187b5ce3b018775638c2dc0c114.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8] Undefined index: id D:\git\card\card2\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: string D:\git\card\card2\Runtime\Cache\Home\8fc23dac70ed15637be9ce323f30dc19.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-02-14T11:01:17+08:00 ] 127.0.0.1 /card/card2.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card2\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card2\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx1c5619b4d24d1301&amp;secret=97df1cbc025cedb005924b0871b9280e) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 70 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/d86c828583c5c6160e8acfee88ba1590.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&amp;access_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 53 行.
+NOTIC: [2] unlink(./card2/Runtime/Temp/e344c187b5ce3b018775638c2dc0c114.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\git\card\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8] Undefined index: id D:\git\card\card2\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: string D:\git\card\card2\Runtime\Cache\Home\8fc23dac70ed15637be9ce323f30dc19.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001159s ]
+
