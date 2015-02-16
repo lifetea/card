@@ -14,6 +14,7 @@
 <link type="text/css" rel="stylesheet" href="src/card.css" />
 <script type="text/javascript" src="src/hammer.min.js"></script>
 <script type="text/javascript" src="src/card.js"></script>
+<link type="text/css" rel="stylesheet" href="res/sweet-alert.css" />
 </head>
 <body>
 	<div class="container" id="container2">
@@ -34,11 +35,12 @@
 		<div class="cloud">
 			<div class="toolbar">
 				<a href="javascript:;" class="takephoto"><input id="photofile" type="file" accept="image/*" onchange="selectPhoto();" /></a>
-				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.artistagent"  class="download"  ">下载App</a>
+				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.artistagent"  class="download">下载App</a>
 				<a href="javascript:;" class="share" onclick="share();">分享</a>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="res/sweet-alert.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <!--  
 <?php echo ($data["string"]); ?>|

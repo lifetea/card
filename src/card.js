@@ -148,7 +148,7 @@ function clipPhoto(){
 
 function share(){
 	if(file == null) {
-		alert('你还没有上传照片');
+		swal("温馨提示", "您还没有上传照片")
 		return false;
 	}
 	document.getElementById('shareicon').style.display = 'block';
@@ -207,7 +207,7 @@ function shareTimeline(){
 	        //alert('用户点击分享到朋友圈');
 	      },
 	      success: function (res) {
-	        alert('已分享');
+	        //alert('已分享');
 	      },
 	      cancel: function (res) {
 	        //alert('已取消');
