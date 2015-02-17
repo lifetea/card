@@ -83,6 +83,24 @@
 		      alert(JSON.stringify(res));
 		    }
 		  });
+		
+	    wx.onMenuShareTimeline({
+		      title: "安居客祝你羊年大吉，一站到家！",
+		      link: window.conf["link"]+id,
+		      imgUrl: 'http://card.greenco.com.cn/res/images/anjukelogo.png',
+		      trigger: function (res) {
+		        //alert('用户点击分享到朋友圈');
+		      },
+		      success: function (res) {
+		        alert('已分享');
+		      },
+		      cancel: function (res) {
+		        //alert('已取消');
+		      },
+		      fail: function (res) {
+		        alert(JSON.stringify(res));
+		      }
+		    });
 	});
 	wx.error(function(res){
 	
