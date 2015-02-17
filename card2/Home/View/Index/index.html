@@ -49,6 +49,14 @@
 
 -->
 <script type="text/javascript">
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+};
+window.conf ={
+		"link":"http://card.greenco.com.cn/card2.php?id="
+	};
 wx.config({
     debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
     appId: '{$data.appId}', // 必填，公众号的唯一标识
@@ -60,16 +68,50 @@ wx.config({
                 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 });
 wx.ready(function(){
+	var id =getQueryString("id");
+	wx.onMenuShareAppMessage({
+	    title: "艺人驾到 祝您羊年大吉，生意兴隆!",
+	    desc: '大秤分金虚席以待，足不出户生意兴隆。艺人驾到让你有钱，任性！',
+	    link: window.conf["link"]+id,
+	    imgUrl: 'http://card.greenco.com.cn/src/images/yiren.png',
+	    trigger: function (res) {
+	      //alert('用户点击发送给朋友');
+	    },
+	    success: function (res) {
+	      //alert('已分享');
+	    },
+	    cancel: function (res) {
+	      //alert('已取消');
+	    },
+	    fail: function (res) {
+	      alert(JSON.stringify(res));
+	    }
+	  });
 	
+    wx.onMenuShareTimeline({
+	      title: "艺人驾到 祝您羊年大吉，生意兴隆!",
+	      link: window.conf["link"]+id,
+	      imgUrl: 'http://card.greenco.com.cn/src/images/yiren.png',
+	      trigger: function (res) {
+	        //alert('用户点击分享到朋友圈');
+	      },
+	      success: function (res) {
+	        //alert('已分享');
+	      },
+	      cancel: function (res) {
+	        //alert('已取消');
+	      },
+	      fail: function (res) {
+	        alert(JSON.stringify(res));
+	      }
+	    });
 });
 wx.error(function(res){
 
     // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
 
 });
-window.conf ={
-		"link":"http://card.greenco.com.cn/card2.php?id="
-	}
+
 </script>	
 </body>
 </html>
