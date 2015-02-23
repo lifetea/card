@@ -63,13 +63,13 @@
 	                'onMenuShareTimeline',
 	                'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 	});
+	var id =getQueryString("id");
+	var textarea = document.getElementById("textarea");
+	window.val = "";
+	textarea.onchange =function(){
+		window.val = textarea.value;
+	};
 	wx.ready(function(){
-		var id =getQueryString("id");
-		var textarea = document.getElementById("textarea");
-		window.val = "";
-		textarea.onchange =function(){
-			window.val = textarea.value;
-		};
 		wx.onMenuShareAppMessage({
 		    title: "安居客祝你羊年大吉，一站到家！",
 		    desc: '安居客APP，有钱任性，随时找房，买卖房屋，最快平台！',
