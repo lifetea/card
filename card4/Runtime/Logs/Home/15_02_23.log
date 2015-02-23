@@ -1,0 +1,42 @@
+[ 2015-02-23T13:23:28+08:00 ] 123.153.54.160 /card4.php?id=1424659652&from=groupmessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] include(../Common/test.php): failed to open stream: No such file or directory /var/www/card/card4/Home/Controller/IndexController.class.php 第 4 行.
+NOTIC: [2] include(): Failed opening '../Common/test.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') /var/www/card/card4/Home/Controller/IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in /var/www/card/card4/Home/Controller/IndexController.class.php on line 8 and defined /var/www/card/ThinkPHP/Library/Org/Util/JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in /var/www/card/card4/Home/Controller/IndexController.class.php on line 8 and defined /var/www/card/ThinkPHP/Library/Org/Util/JSSDK.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [2] file_put_contents(./card4/Runtime/Cache/Home/f0de73c3bea2747b22179eeac5dd2970.php): failed to open stream: Permission denied /var/www/card/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:./card4/Runtime/Cache/Home/f0de73c3bea2747b22179eeac5dd2970.php
+
+[ 2015-02-23T13:24:31+08:00 ] 123.153.54.160 /card4.php?id=1424659652&from=groupmessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] include(../Common/test.php): failed to open stream: No such file or directory /var/www/card/card4/Home/Controller/IndexController.class.php 第 4 行.
+NOTIC: [2] include(): Failed opening '../Common/test.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') /var/www/card/card4/Home/Controller/IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in /var/www/card/card4/Home/Controller/IndexController.class.php on line 8 and defined /var/www/card/ThinkPHP/Library/Org/Util/JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in /var/www/card/card4/Home/Controller/IndexController.class.php on line 8 and defined /var/www/card/ThinkPHP/Library/Org/Util/JSSDK.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
