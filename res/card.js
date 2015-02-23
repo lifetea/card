@@ -155,6 +155,7 @@ function clipPhoto(){
 	document.getElementById('rotateLeft').className = 'hide';
 	document.getElementById('bingo').className = 'hide';
 	upload();
+	window.val = document.getElementById("textarea").value;
 }
 
 function preview(){
