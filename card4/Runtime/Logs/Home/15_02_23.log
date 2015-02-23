@@ -232,3 +232,78 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
 
+[ 2015-02-23T14:11:55+08:00 ] 127.0.0.1 /card/card4.php?id=1424669766&val=%E5%93%88%E5%93%88%E5%93%88%E5%93%88&from=singlemessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2] mt_rand() [<a href='function.mt-rand'>function.mt-rand</a>]: max(-2147483648) is smaller than min(1) D:\git\card\cs.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2015-02-23T14:17:20+08:00 ] 127.0.0.1 /card/card4.php?id=1424669766&val=%E5%93%88%E5%93%88%E5%93%88%E5%93%88&from=singlemessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+NOTIC: [2] mt_rand() [<a href='function.mt-rand'>function.mt-rand</a>]: max(-2147483648) is smaller than min(1) D:\git\card\cs.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002538s ]
+
+[ 2015-02-23T14:18:02+08:00 ] 127.0.0.1 /card/card4.php?id=1424669766&val=%E5%93%88%E5%93%88%E5%93%88%E5%93%88&from=singlemessage&isappinstalled=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+NOTIC: [2] include(../Common/test.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] include() [<a href='function.include'>function.include</a>]: Failed opening '../Common/test.php' for inclusion (include_path='.;C:\php\pear') D:\git\card\card4\Home\Controller\IndexController.class.php 第 4 行.
+NOTIC: [2] Missing argument 1 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for Org\Util\JSSDK::__construct(), called in D:\git\card\card4\Home\Controller\IndexController.class.php on line 8 and defined D:\git\card\ThinkPHP\Library\Org\Util\JSSDK.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2] mt_rand() [<a href='function.mt-rand'>function.mt-rand</a>]: max(-2147483648) is smaller than min(1) D:\git\card\cs.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+

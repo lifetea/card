@@ -66,6 +66,7 @@
 	wx.ready(function(){
 		var id =getQueryString("id");
 		var textarea = document.getElementById("textarea");
+		window.val = "";
 		textarea.onchange =function(){
 			window.val = textarea.value;
 		};
