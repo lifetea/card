@@ -1,6 +1,5 @@
 ﻿var file = null;
 var userId = null;
-var userVal=null;
 var canvas = null;
 var ctx = null;
 var cWidth = 0;
@@ -156,7 +155,6 @@ function clipPhoto(){
 	document.getElementById('rotateLeft').className = 'hide';
 	document.getElementById('bingo').className = 'hide';
 	upload();
-	userVal = document.getElementById("textarea").value;
 }
 
 function preview(){
@@ -222,7 +220,7 @@ function dataURL2blob(dataURL){
 function shareTimeline(){
     wx.onMenuShareTimeline({
 	      title: "安居客祝你羊年大吉，一站到家！",
-	      link: window.conf["link"]+userId+"&val="+encodeURI(userVal),
+	      link: window.conf["link"]+userId+"&val="+encodeURI(window.val),
 	      imgUrl: 'http://card.greenco.com.cn/res/images/anjukelogo.png',
 	      trigger: function (res) {
 	        //alert('用户点击分享到朋友圈');
@@ -243,7 +241,7 @@ function shareAppMessage(){
 	wx.onMenuShareAppMessage({
 	    title: "安居客祝你羊年大吉，一站到家！",
 	    desc: '安居客APP，有钱任性，随时找房，买卖房屋，最快平台！',
-	    link: window.conf["link"]+userId+"&val="+encodeURI(userVal),
+	    link: window.conf["link"]+userId+"&val="+encodeURI(window.val),
 	    imgUrl: 'http://card.greenco.com.cn/res/images/anjukelogo.png',
 	    trigger: function (res) {
 	      //alert('用户点击发送给朋友');
