@@ -40,6 +40,7 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
 
+<<<<<<< HEAD
 [ 2015-02-23T13:33:00+08:00 ] 123.153.54.160 /card4.php?id=1424659652&from=groupmessage&isappinstalled=0
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
@@ -1106,3 +1107,5 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
 
+=======
+>>>>>>> f94e1616dad82d37512379a17d58bf6bbbcc9474
